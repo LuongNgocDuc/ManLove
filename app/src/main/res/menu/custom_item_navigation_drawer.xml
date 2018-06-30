@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:title="Home"
+            android:id="@+id/home_item"
+            android:icon="@mipmap/android"
+            tools:ignore="HardcodedText" />
+    <item android:title="Introduce"
+        android:id="@+id/introduce_item"
+        android:icon="@mipmap/android"
+        tools:ignore="HardcodedText" />
+    <item android:title="Support"
+        android:id="@+id/support_item"
+        android:icon="@mipmap/android"
+        tools:ignore="HardcodedText" />
+    <item android:title="Account"
+        android:id="@+id/account_item"
+        android:icon="@mipmap/android"
+        tools:ignore="HardcodedText" />
+    <item android:title="Log Out"
+        android:id="@+id/log_out_item"
+        android:icon="@mipmap/android"
+        tools:ignore="HardcodedText" />
+</menu>

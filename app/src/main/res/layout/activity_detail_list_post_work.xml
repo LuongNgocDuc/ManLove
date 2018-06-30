@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailListPostWork">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar_detail"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_detail"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_detail_list_post_work"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_name_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_detail"
+            android:layout_marginTop="30dp"
+            android:text="Name:"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_name_user_detai_list_post_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/txt_name_one"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_age_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name_one"
+            android:layout_marginTop="10dp"
+            android:text="Age:"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_age_user_detail_list_post_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name_one"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txt_age_one"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_work_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_age_one"
+            android:layout_marginTop="10dp"
+            android:text="Describle Work:"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:enabled="false"
+            android:padding="6dp"
+            android:gravity="start"
+            android:background="@drawable/custom_edt_profire"
+            android:id="@+id/txt_work_detail"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@id/txt_work_one"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:onClick="rent"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:background="@drawable/custom_btn"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_rent"
+            android:text="Thuê"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+</RelativeLayout>

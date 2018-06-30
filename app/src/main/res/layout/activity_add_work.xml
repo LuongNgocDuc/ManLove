@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddWork">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/color_main"
+        android:id="@+id/toolbar_add_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_main"
+            android:text="List Work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Capture Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_capture_user"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/add_capture_phote"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_main"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_name_add_listwork"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edt_profire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_main"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,SpUsage" />
+        <EditText
+            android:id="@+id/edt_age_add_listwork"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edt_profire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="LabelFor,TextFields" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_main"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Describle Work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,SpUsage" />
+        <EditText
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:hint="Vui lòng mô tả công việc và tiền công muốn được nhận."
+            android:id="@+id/edt_describle_work_add_listwork"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:padding="6dp"
+            android:background="@drawable/custom_edt_profire"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            tools:ignore="HardcodedText,TextFields" />
+        <Button
+            android:id="@+id/btn_add_list"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:text="Add"
+            android:background="@drawable/custom_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>

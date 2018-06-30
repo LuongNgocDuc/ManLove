@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edt_account_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edt"
+        android:hint="Account"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextFields" />
+    <EditText
+        android:id="@+id/edt_password_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edt"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextFields" />
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/btn_signin"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffff"
+        android:text="Sign In"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
